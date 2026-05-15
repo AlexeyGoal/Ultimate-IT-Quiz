@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квизы: языки, Linux, инструменты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Глобальные табы -->
+        <div class="global-tabs">
+            <button class="global-tab-btn active" data-global="languages">🌐 Языки</button>
+            <button class="global-tab-btn" data-global="os">🐧 Linux</button>
+            <button class="global-tab-btn" data-global="tools">🔧 Инструменты</button>
+        </div>
+
+        <!-- Блок "Языки программирования" -->
+        <div id="languages-block" class="global-block active">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="questions">📝 Вопросы</button>
+                <button class="tab-btn" data-tab="code">💻 Угадай по коду</button>
+                <button class="tab-btn" data-tab="logo">🎨 Угадай по логотипу</button>
+                <button class="tab-btn" data-tab="output">🤔 Угадай вывод</button>
+            </div>
+            <div class="quiz-panel active" id="panel-questions"></div>
+            <div class="quiz-panel" id="panel-code"></div>
+            <div class="quiz-panel" id="panel-logo"></div>
+            <div class="quiz-panel" id="panel-output"></div>
+        </div>
+
+        <!-- Блок "Операционные системы" -->
+        <div id="os-block" class="global-block">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="linux-questions">📝 Вопросы</button>
+                <button class="tab-btn" data-tab="linux-cmd-meaning">❓ Что делает команда?</button>
+                <button class="tab-btn" data-tab="linux-cmd-to-action">⌨️ Какую команду ввести?</button>
+            </div>
+            <div class="quiz-panel active" id="panel-linux-questions"></div>
+            <div class="quiz-panel" id="panel-linux-cmd-meaning"></div>
+            <div class="quiz-panel" id="panel-linux-cmd-to-action"></div>
+        </div>
+
+        <!-- Блок "Инструменты" -->
+        <div id="tools-block" class="global-block">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tools-questions">📝 Вопросы</button>
+                <button class="tab-btn" data-tab="tools-cmd-meaning">❓ Что делает команда?</button>
+                <button class="tab-btn" data-tab="tools-cmd-to-action">⌨️ Какую команду ввести?</button>
+            </div>
+            <div class="quiz-panel active" id="panel-tools-questions"></div>
+            <div class="quiz-panel" id="panel-tools-cmd-meaning"></div>
+            <div class="quiz-panel" id="panel-tools-cmd-to-action"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
