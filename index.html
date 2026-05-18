@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Квизы: языки, Linux, инструменты</title>
+    <title>Quizzes: Languages, Linux, Git</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app-container">
-        <!-- Глобальные табы -->
+        <!-- Global tabs -->
         <div class="global-tabs">
-            <button class="global-tab-btn active" data-global="languages">🌐 Языки</button>
+            <button class="global-tab-btn active" data-global="languages">🌐 Languages</button>
             <button class="global-tab-btn" data-global="os">🐧 Linux</button>
-            <button class="global-tab-btn" data-global="tools">🔧 Инструменты</button>
+            <button class="global-tab-btn" data-global="git">🔀 Git</button>
         </div>
 
-        <!-- Блок "Языки программирования" -->
+        <!-- Languages block -->
         <div id="languages-block" class="global-block active">
             <div class="tabs">
-                <button class="tab-btn active" data-tab="questions">📝 Вопросы</button>
-                <button class="tab-btn" data-tab="code">💻 Угадай по коду</button>
-                <button class="tab-btn" data-tab="logo">🎨 Угадай по логотипу</button>
-                <button class="tab-btn" data-tab="output">🤔 Угадай вывод</button>
+                <button class="tab-btn active" data-tab="questions">📝 Questions</button>
+                <button class="tab-btn" data-tab="code">💻 Guess by Code</button>
+                <button class="tab-btn" data-tab="logo">🎨 Guess by Logo</button>
+                <button class="tab-btn" data-tab="output">🤔 Guess the Output</button>
             </div>
             <div class="quiz-panel active" id="panel-questions"></div>
             <div class="quiz-panel" id="panel-code"></div>
@@ -29,28 +29,28 @@
             <div class="quiz-panel" id="panel-output"></div>
         </div>
 
-        <!-- Блок "Операционные системы" -->
+        <!-- Linux block -->
         <div id="os-block" class="global-block">
             <div class="tabs">
-                <button class="tab-btn active" data-tab="linux-questions">📝 Вопросы</button>
-                <button class="tab-btn" data-tab="linux-cmd-meaning">❓ Что делает команда?</button>
-                <button class="tab-btn" data-tab="linux-cmd-to-action">⌨️ Какую команду ввести?</button>
+                <button class="tab-btn active" data-tab="linux-questions">📝 Questions</button>
+                <button class="tab-btn" data-tab="linux-cmd-meaning">❓ What does this command do?</button>
+                <button class="tab-btn" data-tab="linux-cmd-to-action">⌨️ Which command to use?</button>
             </div>
             <div class="quiz-panel active" id="panel-linux-questions"></div>
             <div class="quiz-panel" id="panel-linux-cmd-meaning"></div>
             <div class="quiz-panel" id="panel-linux-cmd-to-action"></div>
         </div>
 
-        <!-- Блок "Инструменты" -->
-        <div id="tools-block" class="global-block">
+        <!-- Git block -->
+        <div id="git-block" class="global-block">
             <div class="tabs">
-                <button class="tab-btn active" data-tab="tools-questions">📝 Вопросы</button>
-                <button class="tab-btn" data-tab="tools-cmd-meaning">❓ Что делает команда?</button>
-                <button class="tab-btn" data-tab="tools-cmd-to-action">⌨️ Какую команду ввести?</button>
+                <button class="tab-btn active" data-tab="git-questions">📝 Questions</button>
+                <button class="tab-btn" data-tab="git-cmd-meaning">❓ What does this command do?</button>
+                <button class="tab-btn" data-tab="git-cmd-to-action">⌨️ Which command to use?</button>
             </div>
-            <div class="quiz-panel active" id="panel-tools-questions"></div>
-            <div class="quiz-panel" id="panel-tools-cmd-meaning"></div>
-            <div class="quiz-panel" id="panel-tools-cmd-to-action"></div>
+            <div class="quiz-panel active" id="panel-git-questions"></div>
+            <div class="quiz-panel" id="panel-git-cmd-meaning"></div>
+            <div class="quiz-panel" id="panel-git-cmd-to-action"></div>
         </div>
     </div>
 
