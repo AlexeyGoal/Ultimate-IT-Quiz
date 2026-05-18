@@ -2,58 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizzes: Languages, Linux, Git</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Ultimate It Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="noise"></div>
+    <div class="gradient-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+    
     <div class="app-container">
-        <!-- Global tabs -->
-        <div class="global-tabs">
-            <button class="global-tab-btn active" data-global="languages">🌐 Languages</button>
-            <button class="global-tab-btn" data-global="os">🐧 Linux</button>
-            <button class="global-tab-btn" data-global="git">🔀 Git</button>
+        <!-- Header with logo -->
+        <div class="quiz-header">
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">IT<span class="logo-highlight">QUIZ</span></span>
+            </div>
+            
         </div>
 
-        <!-- Languages block -->
+        <!-- Global category tabs -->
+        <div class="global-tabs">
+            <button class="global-tab-btn active" data-global="languages">
+                <span class="tab-icon"></span>
+                <span>Languages</span>
+            </button>
+            <button class="global-tab-btn" data-global="os">
+                <span class="tab-icon"></span>
+                <span>Linux</span>
+            </button>
+            <button class="global-tab-btn" data-global="git">
+                <span class="tab-icon"></span>
+                <span>Git</span>
+            </button>
+        </div>
+
+        <!-- LANGUAGES BLOCK -->
         <div id="languages-block" class="global-block active">
             <div class="tabs">
-                <button class="tab-btn active" data-tab="questions">📝 Questions</button>
-                <button class="tab-btn" data-tab="code">💻 Guess by Code</button>
-                <button class="tab-btn" data-tab="logo">🎨 Guess by Logo</button>
-                <button class="tab-btn" data-tab="output">🤔 Guess the Output</button>
+                <button class="tab-btn active" data-tab="questions">
+                    <span></span><span>Q&A</span>
+                </button>
+                <button class="tab-btn" data-tab="code">
+                    <span></span><span>Guess by Code</span>
+                </button>
+                <button class="tab-btn" data-tab="output">
+                    <span></span><span>Guess Output</span>
+                </button>
             </div>
             <div class="quiz-panel active" id="panel-questions"></div>
             <div class="quiz-panel" id="panel-code"></div>
-            <div class="quiz-panel" id="panel-logo"></div>
             <div class="quiz-panel" id="panel-output"></div>
         </div>
 
-        <!-- Linux block -->
+        <!-- LINUX BLOCK -->
         <div id="os-block" class="global-block">
             <div class="tabs">
-                <button class="tab-btn active" data-tab="linux-questions">📝 Questions</button>
-                <button class="tab-btn" data-tab="linux-cmd-meaning">❓ What does this command do?</button>
-                <button class="tab-btn" data-tab="linux-cmd-to-action">⌨️ Which command to use?</button>
+                <button class="tab-btn active" data-tab="linux-questions">
+                    <span></span><span>Concepts</span>
+                </button>
+                <button class="tab-btn" data-tab="linux-cmd-meaning">
+                    <span></span><span>CMD Meaning</span>
+                </button>
+                <button class="tab-btn" data-tab="linux-cmd-to-action">
+                    <span></span><span>CMD Match</span>
+                </button>
             </div>
             <div class="quiz-panel active" id="panel-linux-questions"></div>
             <div class="quiz-panel" id="panel-linux-cmd-meaning"></div>
             <div class="quiz-panel" id="panel-linux-cmd-to-action"></div>
         </div>
 
-        <!-- Git block -->
+        <!-- GIT BLOCK -->
         <div id="git-block" class="global-block">
             <div class="tabs">
-                <button class="tab-btn active" data-tab="git-questions">📝 Questions</button>
-                <button class="tab-btn" data-tab="git-cmd-meaning">❓ What does this command do?</button>
-                <button class="tab-btn" data-tab="git-cmd-to-action">⌨️ Which command to use?</button>
+                <button class="tab-btn active" data-tab="git-questions">
+                    <span></span><span>Essentials</span>
+                </button>
+                <button class="tab-btn" data-tab="git-cmd-meaning">
+                    <span></span><span>CMD Insight</span>
+                </button>
+                <button class="tab-btn" data-tab="git-cmd-to-action">
+                    <span></span><span>Command Match</span>
+                </button>
             </div>
             <div class="quiz-panel active" id="panel-git-questions"></div>
             <div class="quiz-panel" id="panel-git-cmd-meaning"></div>
             <div class="quiz-panel" id="panel-git-cmd-to-action"></div>
         </div>
+        
+        <!-- Footer -->
+        <div class="quiz-footer">
+            <p>✦ Challenge yourself · Learn something new ✦</p>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

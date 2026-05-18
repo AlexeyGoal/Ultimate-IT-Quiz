@@ -45,9 +45,9 @@
                 <div class="difficulty-screen">
                     <div class="difficulty-title">Choose difficulty level</div>
                     <div class="difficulty-buttons">
-                        <button class="diff-btn easy" data-diff="easy">😊 Easy</button>
-                        <button class="diff-btn medium" data-diff="medium">🧐 Medium</button>
-                        <button class="diff-btn hard" data-diff="hard">🤯 Hard</button>
+                        <button class="diff-btn easy" data-diff="easy">Easy</button>
+                        <button class="diff-btn medium" data-diff="medium">Medium</button>
+                        <button class="diff-btn hard" data-diff="hard">Hard</button>
                     </div>
                 </div>
             `;
@@ -270,13 +270,7 @@
             questions: lang.codeQuestions,
             render: q => `<pre><code>${esc(q.code)}</code></pre>`
         },
-        {
-            tabName: 'logo',
-            panelId: 'panel-logo',
-            questions: lang.logoQuestions,
-            render: q => `<img src="${q.imgUrl}" alt="Language logo"
-                onerror="this.style.display='none';this.parentElement.innerHTML+='<p>🚫 Image failed to load. Guess from the options!</p>'">`
-        },
+        
         {
             tabName: 'output',
             panelId: 'panel-output',
