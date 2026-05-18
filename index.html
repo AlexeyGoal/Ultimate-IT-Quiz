@@ -17,16 +17,13 @@
     </div>
     
     <div class="app-container">
-        <!-- Header with logo -->
         <div class="quiz-header">
             <div class="logo">
                 <span class="logo-icon">✦</span>
                 <span class="logo-text">IT<span class="logo-highlight">QUIZ</span></span>
             </div>
-            
         </div>
 
-        <!-- Global category tabs -->
         <div class="global-tabs">
             <button class="global-tab-btn active" data-global="languages">
                 <span class="tab-icon"></span>
@@ -40,9 +37,12 @@
                 <span class="tab-icon"></span>
                 <span>Git</span>
             </button>
+            <button class="global-tab-btn" data-global="kotm">
+                <span class="tab-icon">👑</span>
+                <span>KotM</span>
+            </button>
         </div>
 
-        <!-- LANGUAGES BLOCK -->
         <div id="languages-block" class="global-block active">
             <div class="tabs">
                 <button class="tab-btn active" data-tab="questions">
@@ -60,7 +60,6 @@
             <div class="quiz-panel" id="panel-output"></div>
         </div>
 
-        <!-- LINUX BLOCK -->
         <div id="os-block" class="global-block">
             <div class="tabs">
                 <button class="tab-btn active" data-tab="linux-questions">
@@ -78,7 +77,6 @@
             <div class="quiz-panel" id="panel-linux-cmd-to-action"></div>
         </div>
 
-        <!-- GIT BLOCK -->
         <div id="git-block" class="global-block">
             <div class="tabs">
                 <button class="tab-btn active" data-tab="git-questions">
@@ -95,8 +93,11 @@
             <div class="quiz-panel" id="panel-git-cmd-meaning"></div>
             <div class="quiz-panel" id="panel-git-cmd-to-action"></div>
         </div>
+
+        <div id="kotm-block" class="global-block">
+            <div class="quiz-panel active" id="panel-kotm"></div>
+        </div>
         
-        <!-- Footer -->
         <div class="quiz-footer">
             <p>✦ Challenge yourself · Learn something new ✦</p>
         </div>
